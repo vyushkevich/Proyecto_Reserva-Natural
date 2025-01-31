@@ -3,8 +3,8 @@ package com.reserva.natural.controller;
 import java.util.List;
 
 import com.reserva.natural.dto.AnimalDTO;
-import com.reserva.natural.repository.AnimalRepository;
 import com.reserva.natural.service.AnimalService;
+import com.reserva.natural.repository.AnimalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("${api-endpoint}/animals")
 public class AnimalController {
 
+    @SuppressWarnings("unused")
     @Autowired
     private AnimalRepository animalRepository;
 
