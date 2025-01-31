@@ -77,4 +77,29 @@ A nature reserve has requested a management system to control its fauna.
 ## Difficulty Level
 Medium
 
-''' [text](src/main/resources/dataH2.sql)
+[data h2](src/main/resources/dataH2.sql)
+
+CREATE TABLE countries (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+CREATE TABLE family (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+CREATE TABLE types (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    family_id BIGINT NOT NULL,
+    FOREIGN KEY (family_id) REFERENCES family(id)
+);
+CREATE TABLE animals (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    family_id BIGINT NOT NULL,
+    type_id BIGINT NOT NULL,
+    gender VARCHAR(10) NOT NULL,
+    country_id BIGINT NOT NULL,
+    arrival_date DATE NOT NULL,
+    photo_url VARCHAR(255)
+);
