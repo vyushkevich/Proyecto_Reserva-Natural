@@ -2,7 +2,6 @@ package com.reserva.natural.model;
 
 import java.util.Date;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
