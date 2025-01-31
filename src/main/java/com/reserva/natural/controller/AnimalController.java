@@ -2,9 +2,9 @@ package com.reserva.natural.controller;
 
 import java.util.List;
 
-import org.factoriaf5.animal_reserve.dto.AnimalDTO;
-import org.factoriaf5.animal_reserve.repository.AnimalRepository;
-import org.factoriaf5.animal_reserve.service.AnimalService;
+import com.reserva.natural.dto.AnimalDTO;
+import com.reserva.natural.repository.AnimalRepository;
+import com.reserva.natural.service.AnimalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.GetMapping;

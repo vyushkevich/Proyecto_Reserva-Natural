@@ -2,7 +2,7 @@ package com.reserva.natural.repository;
 
 import java.util.List;
 
-import org.factoriaf5.animal_reserve.model.Animal;
+import com.reserva.natural.model.Animal;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -13,6 +13,5 @@ public interface AnimalRepository extends JpaRepository<Animal, Long> {
     Page<Animal> findByFamilyFamilyName(String familyName, Pageable pageable);
     List<Animal> findByCountryCountryName(String countryName);
     List<Animal> findByFamilyFamilyNameAndTypeTypeName(String familyName, String typeName);
- // List<Animal> findByFamilyFamilyNameIgnoreCaseAndTypeTypeNameIgnoreCase(String familyName, String typeName);
 
 }

@@ -3,8 +3,8 @@ package com.reserva.natural.service;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.factoriaf5.animal_reserve.dto.AnimalDTO;
-import org.factoriaf5.animal_reserve.repository.AnimalRepository;
+import  com.reserva.natural.dto.AnimalDTO;
+import  com.reserva.natural.repository.AnimalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

@@ -12,33 +12,10 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 
+
+
 @Entity
 public class Animal {
-
-    // @Id
-    // @GeneratedValue(strategy = GenerationType.IDENTITY)
-    // private Long id;
-    // @JsonProperty("name")
-    // private String name;
-    // @ManyToOne(fetch = FetchType.EAGER)
-    // @JoinColumn(name = "type_id", nullable = false)
-    // @JsonProperty("type")
-    // private AnimalType type;
-    // @ManyToOne(fetch = FetchType.EAGER)
-    // @JoinColumn(name = "family_id", nullable = false)
-    // @JsonProperty("family")
-    // private AnimalFamily family;
-    // @ManyToOne(fetch = FetchType.EAGER)
-    // @JoinColumn(name = "gender_id", nullable = false)
-    // @JsonProperty("gender")
-    // private Gender gender;
-    // @ManyToOne(fetch = FetchType.EAGER)
-    // @JoinColumn(name = "country_id", nullable = false)
-    // @JsonProperty("country")
-    // private Country country;
-    // @JsonProperty("dateOfEntry")
-    // @Temporal(TemporalType.DATE)
-    // private Date dateOfEntry;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
